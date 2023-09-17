@@ -25,8 +25,9 @@ const FormRegister = () => {
                 <input placeholder="Senha"
                 class="input-card" type="password">
                     </input>
-
-                <button>Entrar</button>
+            <div className="box-pulse">
+                <button className="btn-submit">Entrar</button>
+                </div>
             </form>
             </div>
             <ToastContainer/>

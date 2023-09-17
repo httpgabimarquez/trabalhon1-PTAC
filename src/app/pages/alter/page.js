@@ -15,25 +15,25 @@ const FormsAlter = () => {
       <form onSubmit={handlerLogin}>
 
       <input
-          placeholder='nome'
+          placeholder='Insira seu nome aqui'
           class="input-card" type="name">
         </input>
 
         <input
-          placeholder='E-mail'
+          placeholder='Insira seu endereço de E-mail aqui'
           class="input-card" type="email">
         </input>
 
         <input
-          placeholder='Senha'
+          placeholder='Insira sua senha aqui'
           class="input-card" type="password">
         </input>
 
         <div className="box-pulse">
-                <button className="btn-submit">Entrar</button>
+                <button className="btn-submit">Alterar</button>
                 </div>
 
-        <button className="btn-submit">
+        <button>
           <a href="/pages/dashboard">Voltar</a></button>
       </form>
       </div>

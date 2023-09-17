@@ -99,6 +99,7 @@ h2{
   float:right;
   padding:8px 12px;
   margin:8px 0 0;
+  text-decoration: none;
   font-family:'Montserrat',sans-serif;
   border:2px solid #78788c;
   background:0;
@@ -153,6 +154,33 @@ h2{
   }
   .btn-submit:hover {
     background-color:#cd4962;
+  }
+
+  .menu-horizontal {
+    background-color: #fff; 
+    padding: 10px 0; 
+  }
+  
+  .menu-horizontal ul {
+    list-style: none;
+    padding: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; }
+  
+  .menu-horizontal li {
+    margin-right: 20px; 
+  }
+  
+  .menu-horizontal a {
+    text-decoration: none; 
+    color: #ffa4b5;
+    padding: 10px 20px; 
+    border-top: 2px solid transparent; 
+    transition: border-top-color 0.3s; 
+  }
+  
+  .menu-horizontal a:hover {
+    border-top-color: #ffa4b5; 
   }
   
 

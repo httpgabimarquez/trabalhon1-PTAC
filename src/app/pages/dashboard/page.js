@@ -8,8 +8,9 @@ export default async function Dashboard() {
         <div>
             <h1>Dashboard</h1>
         <Suspense fallback={<p>Carregando os dados da página...</p>}>
-        <button><a href ="/pages/alter"></a></button>
-        <buttom><a href ="/pages/register"></a></buttom>
+            <ListUsers users={users}/>
+        <button><a href ="/pages/alter">Alterar</a></button>
+        <buttom><a href ="/pages/register">Registre-se</a></buttom>
         </Suspense>
         </div>
     );

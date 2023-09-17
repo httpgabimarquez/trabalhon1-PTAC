@@ -1,6 +1,7 @@
 import { getUsers } from "@/app/functions/handlerAcessAPI";
 import { Suspense } from "react";
-import ListUsers from "@/components/ListUsers";
+import ListUsers from "@/components/ListUsers"; 
+import Returnlog from "@/components/returnpage";
 
 export default async function Dashboard(){
    const users = getUsers()
@@ -18,6 +19,7 @@ export default async function Dashboard(){
         <h1 className="title">Dashboard</h1>
         <Suspense fallback={<p className="loading">Carregando os dados da página...</p>}>
           <ListUsers users={users} />
+          <Returnlog/>
         </Suspense>
       </div>
     );

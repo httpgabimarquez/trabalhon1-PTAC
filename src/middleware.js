@@ -11,7 +11,8 @@ export const middleware = (request) => {
 
     if (!isTokenValidated || !token) {
         if (request.nextUrl.pathname === '/pages/dashboard' ||
-        request.nextUrl.pathname === '/pages/alter' || request.nextUrl.pathname === '/pages/register'
+        request.nextUrl.pathname === '/pages/alter' || 
+        request.nextUrl.pathname === '/pages/register'
         ){
             return NextResponse.redirect(urlLogin);
         }

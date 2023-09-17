@@ -16,6 +16,7 @@ const FormsAlter = () => {
           placeholder='nome'
           type="nome" >
         </input>
+
         <input
           placeholder='E-mail'
           type="email">
@@ -26,7 +27,9 @@ const FormsAlter = () => {
           type='password'
         >
         </input>
+
         <button>Entrar</button>
+
         <button><a href="/pages/dashboard">Voltar</a></button>
       </form>
       <ToastContainer/>

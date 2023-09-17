@@ -1,5 +1,3 @@
-import { Suspense } from "react";
-
 export default async function ListUsers({users}){
     await new Promise((resolve) => setTimeout(resolve, 3000));
     return(
@@ -10,5 +8,5 @@ export default async function ListUsers({users}){
             </p>
             )}
         </div>
-    );
-};
+    )
+}

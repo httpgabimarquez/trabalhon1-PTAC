@@ -8,25 +8,29 @@ const FormRegister = () => {
         toast.sucess('Dados registrados com sucesso')
     }
     return(
-        <div>
-            <h2>Login</h2>
+        <div class="box-formulario">        
+        <div class="formulario">
+        <div className="box-title">
+            <h2 className="title">Registre-se</h2>
             <form onSubmit={handlerLogin}>
 
                 <input placeholder="Nome"
-                type="nome">
+                class="input-card" type="nome">
                     </input>
 
                 <input placeholder="E-mail"
-                type="email">
+                class="input-card" type="email">
                     </input>
 
                 <input placeholder="Senha"
-                type="password">
+                class="input-card" type="password">
                     </input>
 
                 <button>Entrar</button>
             </form>
+            </div>
             <ToastContainer/>
+        </div>
         </div>
     )
 };

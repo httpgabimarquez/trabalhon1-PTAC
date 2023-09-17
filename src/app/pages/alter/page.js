@@ -16,7 +16,7 @@ const FormsAlter = () => {
 
       <input
           placeholder='nome'
-          class="input-card" type="nome">
+          class="input-card" type="name">
         </input>
 
         <input
@@ -33,7 +33,8 @@ const FormsAlter = () => {
                 <button className="btn-submit">Entrar</button>
                 </div>
 
-        <button className="btn-submit"><a href="/pages/dashboard">Voltar</a></button>
+        <button className="btn-submit">
+          <a href="/pages/dashboard">Voltar</a></button>
       </form>
       </div>
       <ToastContainer/>

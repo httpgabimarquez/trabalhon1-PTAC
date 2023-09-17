@@ -5,8 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 const FormRegister = () => {
     const handlerLogin = async (e) =>{
         e.preventDefault();
-        toast.sucess('Dados registrados com sucesso')
+        toast.success('Dados registrados com sucesso.')
     }
+
     return(
         <div class="box-formulario">        
         <div class="formulario">
@@ -25,6 +26,7 @@ const FormRegister = () => {
                 <input placeholder="Senha"
                 class="input-card" type="password">
                     </input>
+                    
             <div className="box-pulse">
                 <button className="btn-submit">Entrar</button>
                 </div>

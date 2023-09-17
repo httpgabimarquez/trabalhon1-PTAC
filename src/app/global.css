@@ -1,43 +1,39 @@
 *{
-    background-color: black;
-    font-family: 'Courier New', Courier, monospace;
+    color:#222;
 }
 
+body{
+    color:#222;
+}
 p{
-    color: white;
+    color: black;
 }
 
 h1{
-    color: white;
+    color: black;
 }
 
 h2{
-    color: white;
+    color: black;
 }
 
-button {
-    background-color: #e48b91; 
-    color: white; 
-    border: none; 
-    padding: 10px 20px; 
-    text-decoration: none; 
-    cursor: pointer; 
-    margin: 5px; 
-    border-radius: 20px;
-  }
-  
-  button a {
-    color: white; 
-    text-decoration: none; 
+  .box-title .title {
+    text-align: center;
+    color:#222; 
+    font-size:35px; 
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:15px; 
+    color:#ffa4b5;
   }
 
-  .box-title .title {
+  .box-titletwo .titletwo {
     position: relative;
     text-align: center;
     color:#222; 
     font-size:35px; 
-    font-weight:bold;
     text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing:15px; 
     color:#ffa4b5;
   }
@@ -50,7 +46,6 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #232323;
     padding:80px 0;
 }
 .formulario {
@@ -59,6 +54,7 @@ button {
     padding: 60px 5%;
     text-align: center;
 }
+
 
 .formulario input {
     position: relative;
@@ -84,3 +80,38 @@ button {
     color: #242424;
     font-weight: 300;
   }
+
+.input-card:focus,
+.input-card:active {
+  
+  color: #ffa4b5;
+  padding: 10px 0 13px 10px;
+  background: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-card:focus::-webkit-input-placeholder,
+.input-card:active::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+/*Botão*/
+.btn-submit {
+    color: #fff;
+    background: #ffa4b5;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: 0.5s;
+    width: 100%;
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    float: left;
+  }
+  .btn-submit:hover {
+    background-color:#cd4962;
+  }
+  
+

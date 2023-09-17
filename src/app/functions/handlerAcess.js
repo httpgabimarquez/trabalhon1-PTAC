@@ -13,9 +13,7 @@ const handlerAcessUser = async (user) => {
         if (typeof window !== undefined){
         //* registrando o name na local storage.
         localStorage.setItem('name', userAuth.name);
-       
     }
-
     return userAuth
 }
 }

@@ -16,7 +16,6 @@ h1{
 h2{
     color: black;
 }
-
 .subtitle{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -65,7 +64,21 @@ h2{
     position: relative;
     display: flex;
     margin: 50px 10px;
-  }
+    width:100%;
+      padding:10px;
+      box-sizing:border-box;
+      background:none;
+      outline:none;
+      resize:none;
+      border:0;
+      font-family:'Montserrat',sans-serif;
+      transition:all .3s;
+      border-bottom:2px solid #bebed2
+    }
+    input:focus{
+      border-bottom:2px solid #78788c
+    }
+
   
   .input-card {
     display: inline-block;
@@ -73,7 +86,7 @@ h2{
     padding: 10px 0 10px 10px;
     font-family: "Open Sans", sans;
     font-weight: 400;
-    color: #242424;
+    color: white;
     background: #ffffff;
     border: 0;
     border-radius: 3px;
@@ -81,43 +94,33 @@ h2{
     transition: all .3s ease-in-out;
   }
 
-  .input-card::-webkit-input-placeholder {
-    color: #242424;
-    font-weight: 300;
-  }
-
-.input-card:focus,
-.input-card:active {
-  
-  color: #ffa4b5;
-  padding: 10px 0 13px 10px;
-  background: #fff;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.input-card:focus::-webkit-input-placeholder,
-.input-card:active::-webkit-input-placeholder {
-  color: #aaa;
-}
-
 /*Botão*/
 .btn-submit {
-    color: #fff;
-    background: #ffa4b5;
-    cursor: pointer;
-    border-radius: 20px;
-    border: none;
-    border-radius: 3px;
-    transition: 0.5s;
-    width: 100%;
-    padding: 0.5em 1em;
-    font-size: 1.3em;
-    font-weight: bold;
-    float: left;
+  float:right;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #78788c;
+  background:0;
+  color:#5a5a6e;
+  cursor:pointer;
+  transition:all .3s
   }
 
   .buttonpages {
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+  }
+
+  .button{
+    float: left;
     background-color: #e48b91; 
     color: white; 
     border: none; 

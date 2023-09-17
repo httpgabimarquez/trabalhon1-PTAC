@@ -29,7 +29,7 @@ export default function Login() {
     <body>
       <div class="box-title">
       <form onSubmit={handlerLogin}>
-        <h1 className="title">Entre!</h1>
+        <h1 className="title">Login</h1>
         <p className="subtitle">Entre e insira seu E-mail e senha.</p>
         <div class="box-formulario">        
         <div class="formulario">

@@ -8,8 +8,8 @@ const FormsAlter = () => {
     toast.success('Dados alterados com sucesso.')
   }
   return (
-    <div>
-      <h1>Login - Alterar</h1>
+    <div id="returnformulario">
+      <h1 id="textlogin">Login - Alterar</h1>
       <form onSubmit={handlerLogin}>
 
       <input

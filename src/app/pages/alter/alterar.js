@@ -8,31 +8,36 @@ const FormsAlter = () => {
     toast.success('Dados alterados com sucesso.')
   }
   return (
+    <div class="box-formulario">        
+    <div class="formulario">
     <div className="box-title">
       <h1 className="title">Login - Alterar</h1>
       <form onSubmit={handlerLogin}>
 
       <input
           placeholder='nome'
-          type="nome" >
+          class="input-card" type="nome">
         </input>
 
         <input
           placeholder='E-mail'
-          type="email">
+          class="input-card" type="email">
         </input>
 
         <input
           placeholder='Senha'
-          type='password'
-        >
+          class="input-card" type="password">
         </input>
 
-        <button>Entrar</button>
+        <div className="box-pulse">
+                <button className="btn-submit">Entrar</button>
+                </div>
 
-        <button><a href="/pages/dashboard">Voltar</a></button>
+        <button className="btn-submit"><a href="/pages/dashboard">Voltar</a></button>
       </form>
+      </div>
       <ToastContainer/>
+    </div>
     </div>
   )
 };

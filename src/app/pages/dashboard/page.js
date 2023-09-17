@@ -1,6 +1,6 @@
 import { getUsers } from "@/app/functions/handlerAcessAPI";
 import { Suspense } from "react";
-import ListUsers from "@/app/components/ListUsers";
+import ListUsers from "@/components/ListUsers";
 
 export default async function Dashboard(){
    const users = getUsers()
@@ -8,11 +8,11 @@ export default async function Dashboard(){
         <div className="box-title">
 
 <nav class="menu-horizontal">
-                    <ul>
-                        <li><a href="/pages/alter" class="lineTop"> <span>Alterar</span> </a></li>
-                        <li><a href="/pages/register" class="lineTop"> <span>Registre-se</span></a></li>
-                        <li><a href="#" class="lineTop"> <span>Saiba mais...</span></a></li>
-                        <li><a href="#" class="lineTop"> <span>Entre em contato</span></a></li>
+    <ul>
+        <li><a href="/pages/alter" class="lineTop"> <span>Alterar</span> </a></li>
+        <li><a href="/pages/register" class="lineTop"> <span>Registre-se</span></a></li>
+        <li><a href="#" class="lineTop"> <span>Saiba mais...</span></a></li>
+        <li><a href="#" class="lineTop"> <span>Entre em contato</span></a></li>
                     </ul>
                 </nav>
         <h1 className="title">Dashboard</h1>

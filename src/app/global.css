@@ -4,6 +4,11 @@
 
 body{
     color:#222;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 p{
     color: black;
@@ -21,6 +26,28 @@ h2{
   text-align: center;
 }
 
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  text-align: center;
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.user-list h3 {
+  font-size: 24px;
+  margin-bottom: 20px; 
+}
+
+.titledashboard{
+  text-transform: uppercase;
+  color:#ffa4b5;
+  letter-spacing:5px; 
+  font-size: 15px;
+}
   .box-title .title {
     text-align: center;
     color:#222; 
@@ -121,7 +148,6 @@ h2{
     transition:all .3s
   }
 .btnn{
-  float: left;
     background-color: #e48b91; 
     color: white; 
     border: none; 
@@ -129,9 +155,8 @@ h2{
     text-decoration: none; 
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer; 
-    border-radius: 5pxss;
+    border-radius: 5px;
     margin: 5px; 
-   justify-content: center;
 }
   .button{
     float: left;
@@ -176,11 +201,13 @@ h2{
   
   .menu-horizontal ul {
     list-style: none;
-    height: 20px;
+    margin: 0;
     padding: 15px; 
     font-family: Arial, Helvetica, sans-serif;
     background-color: #eef0f2;
     display: flex; 
+    align-items: center;
+    justify-content: center;
   }
   
   .menu-horizontal li {
@@ -197,7 +224,7 @@ h2{
   
   .menu-horizontal a:hover {
     border-top-color: #ffa4b5; 
-    background-color: #ebebeb;
+
   }
   
 

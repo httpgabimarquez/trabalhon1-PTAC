@@ -11,7 +11,7 @@ const FormsAlter = () => {
     <div class="box-formulario">        
     <div class="formulario">
     <div className="box-title">
-      <h1 className="title">Login - Alterar</h1>
+      <h1 className="title">Alterar - Insira seus dados</h1>
       <form onSubmit={handlerLogin}>
 
       <input

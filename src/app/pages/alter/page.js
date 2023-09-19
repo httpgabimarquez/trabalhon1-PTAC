@@ -33,7 +33,7 @@ const FormsAlter = () => {
                 <button className="btn-submit">Alterar</button>
                 </div>
 
-        <button>
+        <button className='btnvoltar'>
           <a href="/pages/dashboard">Voltar</a></button>
       </form>
       </div>

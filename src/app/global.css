@@ -51,10 +51,10 @@ h2{
   .box-title .title {
     text-align: center;
     color:#222; 
-    font-size:35px; 
+    font-size:15px; 
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing:15px; 
+    letter-spacing:10px; 
     color:#ffa4b5;
   }
 
@@ -158,6 +158,17 @@ h2{
     border-radius: 5px;
     margin: 5px; 
 }
+.btnvoltar{
+  padding:8px 12px;
+  margin:8px 0 0;
+  text-decoration: none;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #78788c;
+  color:white;
+  cursor:pointer;
+  transition:all .3s
+}
+
   .button{
     float: left;
     background-color: #e48b91; 

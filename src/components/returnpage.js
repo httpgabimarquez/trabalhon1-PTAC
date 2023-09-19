@@ -10,6 +10,6 @@ export default function Returnlog(){
         push('/')
     }
     return(
-        <div> <button onClick={retorne}>Retornar</button></div>
+        <div> <button className="btnn" onClick={retorne}>Retornar</button></div>
     )
 }

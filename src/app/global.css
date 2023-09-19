@@ -50,6 +50,7 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+   
     padding:80px 0;
 }
 .formulario {
@@ -119,7 +120,19 @@ h2{
     cursor:pointer;
     transition:all .3s
   }
-
+.btnn{
+  float: left;
+    background-color: #e48b91; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer; 
+    border-radius: 5pxss;
+    margin: 5px; 
+   justify-content: center;
+}
   .button{
     float: left;
     background-color: #e48b91; 
@@ -163,12 +176,15 @@ h2{
   
   .menu-horizontal ul {
     list-style: none;
-    padding: 0; 
+    height: 20px;
+    padding: 15px; 
     font-family: Arial, Helvetica, sans-serif;
-    display: flex; }
+    background-color: #eef0f2;
+    display: flex; 
+  }
   
   .menu-horizontal li {
-    margin-right: 20px; 
+    margin-right: 10px; 
   }
   
   .menu-horizontal a {
@@ -181,6 +197,7 @@ h2{
   
   .menu-horizontal a:hover {
     border-top-color: #ffa4b5; 
+    background-color: #ebebeb;
   }
   
 

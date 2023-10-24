@@ -29,10 +29,10 @@ export default function Login() {
     <body>
       <div class="box-title">
       <form onSubmit={handlerLogin}>
-        <h1 className="title">Login</h1>
-        <p className="subtitle">Entre e insira seu E-mail e senha.</p>
+        
         <div class="box-formulario">        
         <div class="formulario">
+        <h1 className="title">Login</h1>
         <input
           placeholder='E-mail'
           class="input-card" type="email"

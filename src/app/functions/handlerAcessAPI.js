@@ -1,38 +1,22 @@
 'use server'
 
-const Listadenomes = [
-    {
-        name: 'Jao',
-        email: 'jao@teste.com',
-        password: '123',
-        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5'
-    },
-    {
-        name: 'Gabriela',
-        email: 'gabriela@teste.com',
-        password: 'lalalalal',
-        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5'
-    },
-    {
-        name: 'Roberta',
-        email: 'roberta@teste.com',
-        password: 'lalalalal',
-        token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5'
-    }
-];
+const url = "https://aula-17-10-omega.vercel.app/";
 
 const getUserAuthenticated = async (userlogin) => {
-    let userAuth = {}
-    Listadenomes.map ((user) => {
-        if (user.email ===  userlogin.email && user.password === userlogin.password){
-            userAuth = user
+   const responseOfApi = await fetch(url + "/user/authenticated", 
+        {
+            method: "POST",
+            headers:  {"Content-Type":"application/json"}, 
+            body: JSON.stringify(userlogin)
         }
-       
-    })
-    return userAuth
-}
+   );
 
+    const userAuth = await responseOfApi();
+    return userAuth;
+ }
+    
 const getUsers = () =>{
-        return Listadenomes;
-}
+       
+ }
+
 export { getUsers, getUserAuthenticated };

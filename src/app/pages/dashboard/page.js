@@ -4,7 +4,7 @@ import ListUsers from "@/components/ListUsers";
 import Returnlog from "@/components/returnpage";
 
 export default async function Dashboard(){
-   const users = getUsers()
+   const users = await getUsers()
     return (
         <div className="box-title">
 

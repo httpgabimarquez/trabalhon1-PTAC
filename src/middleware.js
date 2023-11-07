@@ -10,7 +10,7 @@ export const middleware =  async (request) => {
     const isTokenValidated = await validateToken(token);
 
     if (!isTokenValidated || !token) {
-        if (request.nextUrl.pathname === './pages/dashboard' || request.nextUrl.pathname === '/pages/alter' || request.nextUrl.pathname === '/pages/register'
+        if (request.nextUrl.pathname === '/pages/dashboard' || request.nextUrl.pathname === '/pages/alter' || request.nextUrl.pathname === '/pages/register'
         ){
             return NextResponse.redirect(urlLogin);
         }

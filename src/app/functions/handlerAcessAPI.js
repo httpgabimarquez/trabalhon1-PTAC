@@ -3,7 +3,7 @@
 const url = "https://aula-17-10-omega.vercel.app";
 
 const getUserAuthenticated = async (userlogin) => {
-    console.log (userlogin);
+   try{
    const responseOfApi = await fetch(url + "/user/authenticated", 
         {
             method: "POST",
@@ -14,7 +14,11 @@ const getUserAuthenticated = async (userlogin) => {
 
     const userAuth = await responseOfApi.json();
     return userAuth;
+
+    } catch {
+        return null;
  }
+}
     
 const getUsers = async () => {
     const responseOfApi = await fetch(url + "/users"

@@ -12,12 +12,12 @@ export default function Register(){
         password: '',
     });
     const {push} = useRouter();
-}
 
-const FormRegister = () => {
-    const handlerLogin = async (e) =>{
+    const handlerRegister = async (e) =>{
         e.preventDefault();
+        await postUser(user);
         toast.success('Dados registrados com sucesso.')
+        push('/pages/dashboard')
     }
 
     return(
@@ -25,18 +25,21 @@ const FormRegister = () => {
         <div class="formulario">
         <div className="box-title">
             <h2 className="title">Registre-se</h2>
-            <form onSubmit={handlerLogin}>
+            <form onSubmit={handlerRegister}>
 
                 <input placeholder="Nome"
-                class="input-card" type="nome">
+                class="input-card" type="nome"
+                onChange={(e) => { setUser({ ...user, name: e.target.value }) }}>   
                     </input>
 
                 <input placeholder="E-mail"
-                class="input-card" type="email">
+                class="input-card" type="email"
+                onChange={(e) => { setUser({ ...user, email: e.target.value }) }}>
                     </input>
 
                 <input placeholder="Senha"
-                class="input-card" type="password">
+                class="input-card" type="password"
+                onChange={(e) => { setUser({ ...user, password: e.target.value }) }}>
                     </input>
 
             <div className="box-pulse">
@@ -53,4 +56,5 @@ const FormRegister = () => {
         </div>
         </div>
     )
-};
+
+    }

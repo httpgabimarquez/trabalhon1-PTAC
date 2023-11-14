@@ -15,10 +15,18 @@ export default function Register(){
 
     const handlerRegister = async (e) =>{
         e.preventDefault();
+        try{
         await postUser(user);
-        toast.success('Dados registrados com sucesso.')
-        push('/pages/dashboard')
+        await new Promise((resolve) => {
+            toast.success("Usuário registrado!")
+            setTimeout(resolve, 5000);
+            
+        });
+        return push("/pages/dashboard");
+    } catch {
+        toast.error("Erro no registro");
     }
+}
 
     return(
         <div class="box-formulario">        

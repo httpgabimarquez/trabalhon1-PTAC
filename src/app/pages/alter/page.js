@@ -30,8 +30,8 @@ const FormsAlter = () => {
         </input>
 
         <div className="box-pulse">
-                <button className="btn-submit">Alterar</button>
-                </div>
+          <button className="btn-submit">Alterar</button>
+       </div>
 
         <button className='btnvoltar'>
           <a href="/pages/dashboard">Voltar</a></button>

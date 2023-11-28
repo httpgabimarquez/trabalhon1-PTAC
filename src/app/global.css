@@ -6,7 +6,7 @@ body{
   color:#222;
   margin: 0;
   padding: 0;
-  height: 100vh;
+
   display: flex;
   flex-direction: column;
 }
@@ -59,6 +59,7 @@ h2{
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing:10px; 
   color:#ffa4b5;
+  height: 200%;
 }
 
 .box-titletwo .titletwo {
@@ -159,6 +160,7 @@ input:focus{
   cursor: pointer; 
   border-radius: 5px;
   margin: 5px; 
+  text-align: center;
 }
 
 .btnvoltar{

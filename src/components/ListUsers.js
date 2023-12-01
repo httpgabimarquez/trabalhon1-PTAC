@@ -6,7 +6,7 @@ export default async function ListUsers({users}){
         <div>
             {users?.map((user, index) =>
             <p key={index}>
-                 <Link href={`/pages/dashboard/alter/${user.id}`}> {user.name}</Link>
+                 <Link href={`/pages/alter/${user.id}`}> {user.name}</Link>
                
             </p>
         )}

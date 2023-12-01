@@ -1,12 +1,34 @@
 'use client'
-import { ToastContainer, toast } from 'react-toastify';
+import { getUserAuthenticated, updateUser } from '@/app/functions/handlerAcessAPI';
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const FormsAlter = () => {
+export default function FormsAlter({ params }){
+  
+  const [user, setUser] = useState({
+    name: '',
+    email: '',
+    password: '',    
+  });
+
+  const {push} = useRouter();
+
+  // useEffect(() => {
+   // const findUser = async ()=>{
+   //   const userFind = await getUserAuthenticated(params.id);
+  //    setUser({...user, name: userFind.name, email: userFind.email});
+ //   }
+//    findUser();
+ // }, [])
+  
   const handlerLogin = async (e) => {
     e.preventDefault();
-    toast.success('Dados alterados com sucesso.')
+    await updateUser(user, params.id);
+    return push("/pages/dashboard");
   }
+
   return (
     <div class="box-formulario">        
     <div class="formulario">
@@ -40,7 +62,7 @@ const FormsAlter = () => {
       <ToastContainer/>
     </div>
     </div>
+
   )
 };
 
-export default FormsAlter;

@@ -22,7 +22,7 @@ const getUserAuthenticated = async (userlogin) => {
     
 const getUsers = async () => {
     const responseOfApi = await fetch(url + "/users",
-    {next: {revalidate: 10}}
+    {next: {revalidate: 1}}
     );
 
     const listUsers = await responseOfApi.json();
@@ -46,13 +46,15 @@ const postUser = async (user) => {
 
 const updateUser = async (user, id) => {
     try{
-        const responseOfApi = await fetch(url + "/user"/ + id,{
+        console.log(user)
+        const responseOfApi = await fetch(url + "/user/" + id,{
             method: 'PUT',
             headers: {'Content-Type': 'Application/json'
         },
             body: JSON.stringify(user)
         });
         const userUpdate = await responseOfApi.json();
+        console.log(userUpdate)
         return userUpdate;
     } catch {
         return null;

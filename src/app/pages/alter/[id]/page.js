@@ -38,17 +38,20 @@ export default function FormsAlter({ params }){
 
       <input
           placeholder='Insira seu nome aqui'
-          class="input-card" type="name">
+          class="input-card" type="name"
+           onChange={(e) => { setUser({ ...user, name: e.target.value }) }}>
         </input>
 
         <input
           placeholder='Insira seu endereço de E-mail aqui'
-          class="input-card" type="email">
+          class="input-card" type="email"
+          onChange={(e) => { setUser({ ...user, email: e.target.value }) }}>
         </input>
 
         <input
           placeholder='Insira sua senha aqui'
-          class="input-card" type="password">
+          class="input-card" type="password"
+         onChange={(e) => { setUser({ ...user, password: e.target.value }) }}>
         </input>
 
         <div className="box-pulse">

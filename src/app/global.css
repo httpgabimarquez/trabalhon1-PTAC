@@ -6,9 +6,9 @@ body{
   color:#222;
   margin: 0;
   padding: 0;
-
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 p{
@@ -151,16 +151,17 @@ input:focus{
 }
 
 .btnn{
-  background-color: #e48b91; 
-  color: white; 
-  border: none; 
-  padding: 10px 20px; 
-  text-decoration: none; 
+  background-color: #e48b91;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer; 
+  cursor: pointer;
   border-radius: 5px;
-  margin: 5px; 
-  text-align: center;
+  margin: 5px;
+  float: none; 
+  display: inline-block; 
 }
 
 .btnvoltar{
